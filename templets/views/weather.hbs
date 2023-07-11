@@ -1,0 +1,66 @@
+{{>headers}}
+    <div class="container">
+      <div class="page-banner">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-md-6">
+            <nav aria-label="Breadcrumb">
+              <ul class="breadcrumb justify-content-center py-0 bg-transparent">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active">Weather</li>
+              </ul>
+            </nav>
+            <h1 class="text-center">Weather Forecast</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="page-section">
+
+    <div class="container-fluid mt-4">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-lg-8 col-lg-offset-2 mb-5 mb-lg-0">
+          <form action="#" class="contact-form py-5 px-lg-5">
+            {{!-- <h2 class="mb-4 font-weight-medium text-secondary">Get in touch</h2> --}}
+            <div class="row form-group">
+              <div class="col-md-8 mb-3 mb-md-0">
+                {{!-- <label class="text-black" for="fname">First Name</label> --}}
+                <input type="text" id="city_name" class="form-control" placeholder="Enter Your City Name">
+              </div>
+              <div class="col-md-4">
+                <div class="col-md-12">
+                    <input type="button" value="Submit" class="btn btn-primary" id="submitbtn">
+                </div>
+              </div>
+            </div>
+    
+            <div class="row form-group">
+              {{!-- <div class="col-md-12"> --}}
+                <p id="cityerr" class="col-md-12">Get Output Here</p>
+                {{!-- <label class="text-black" for="message">Message</label> --}}
+                <div class="col-md-3 mt-4">
+                    <h6 id="country">India</h6>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <h3 id="temp">0 &deg C</h3>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <h6 id="tempstatus">Cloud</h6>
+                </div>
+                <div class="col-md-3" id="icons">
+                   <i class='fas fa-sun fa-5x' style='color: #eccc68;'></i>
+                </div>
+                
+                
+              {{!-- </div> --}}
+            </div>
+    
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+{{>footers}}
+
+<script src="js/main.js"></script>
