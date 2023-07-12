@@ -46,5 +46,5 @@ app.get("*",(req, res)=>{
 });
 
 app.listen(port,()=>{
-    console.log(`listen to the port ${port}`);
+    console.log(`listen to the port no ${port}`);
 });
